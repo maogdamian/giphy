@@ -7,22 +7,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- Latest compiled and minified CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
+  <!-- JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Load Font Awesome -->
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/e14e0f3537.js"></script>
 
-  <!-- Load Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mouse+Memoirs" rel="stylesheet">
 
-  <!-- Load local files -->
+  <!-- Local Files -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="assets/javascript/app.js"></script>
 
@@ -56,24 +56,20 @@
 
     
 
-    <!-- Movies will get dumped Dere -->
+    <!-- TV Shows will get dumped Dere -->
     <div id="movies-view"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-      // This function handles events where the add movie button is clicked
+      // This function handles events where the add tvshow button is clicked
       $("#add-tvshow").on("click", function(event) {
         event.preventDefault();
-        // This line of code will grab the input from the textbox
         var tvshow = $("#tvshow-input").val().trim();
-        // The movie from the textbox is then added to our array
         tvshows.push(tvshow);
-        // Calling renderButtons which handles the processing of our movie array
         renderButtons();
       });
-      // Adding click event listeners to all elements with a class of "tvshow"
+
       $(document).on("click", ".tvshow", displayGIFs);
-      // Calling the renderButtons function to display the intial buttons
       renderButtons();
     </script>
   </div>
